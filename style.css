@@ -1,5 +1,10 @@
 body{
+    background: linear-gradient(45deg, rgb(241, 126, 126), rgb(250, 105, 52));
     font-family: sans-serif;
     text-align: center;
-
+    height: 100vh;
+    overflow: hidden;
+}
+#board{
+    background-color: rgba(0, 0, 0, 0.488);
 }

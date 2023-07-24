@@ -88,10 +88,11 @@ function update(currentTime) {
     // drawing board
     context.fillStyle = "black";
     context.fillRect(0, 0, board.width, board.height);
-
+    
     // drawing food
-    context.fillStyle = "red";
+    context.fillStyle = "rgb(225, 88, 88)";
     context.fillRect(foodX, foodY, blockSize, blockSize);
+    
 
     // Check for collision with food and update the snake's body
     if (snakeX === foodX && snakeY === foodY) {
@@ -102,7 +103,7 @@ function update(currentTime) {
     }
 
     // drawing snake
-    context.fillStyle = "lime";
+    context.fillStyle = "rgb(56, 210, 224)";
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
     for (let i = 0; i < snakeBody.length; i++) {
         context.fillRect(snakeBody[i][0], snakeBody[i][1], blockSize, blockSize);
